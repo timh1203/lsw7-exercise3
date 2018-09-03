@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'
 import logo from './logo.svg';
 import './App.css';
-import Cars from "./Cars"
+import List from "./List"
 
 class App extends Component {
   constructor() {
