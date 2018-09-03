@@ -5,7 +5,7 @@ import Car from './Car'
 const List = (props) => {
   return (
     <div className="List">
-      { props.cars.map(car => <Car key={car.id} />) }
+      { props.cars.map(car => <Car key={car.id} car={car} />) }
     </div>
   )
 }
