@@ -12,7 +12,12 @@ const Car = (props) => {
 }
 
 Car.propTypes = {
-  cars: PropTypes.arrayOf(PropTypes.object)
+  car: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    make: PropTypes.string.isRequired,
+    model: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+  })
 }
 
 export default Car
